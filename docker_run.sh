@@ -11,7 +11,7 @@ container_dir="/hosthome/"
 goal_dir=${current_dir//$host_dir/$container_dir}
 echo "goal_dir: \"${goal_dir}\""
 
-Check the command 'nvidia-docker' is existing or not
+# Check the command 'nvidia-docker' is existing or not
 ret_code="$(command -v nvidia-docker)"
 if [ -z "$ret_code" ]
 then
